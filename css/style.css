@@ -7,3 +7,108 @@
     --black: #333333;
     --ligth-bg-txt: #959595;
 }
+
+/* ===GENERIC==== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+/* //===GENERIC==== */
+
+/* ====COLOR==== */
+.bg-darck {
+    background-color: var(--dark-gray);
+}
+
+.ligth-bg {
+    background-color: #FFFFFF;
+}
+
+.ligth-txt {
+    color: var(--ligth-bg-txt);
+}
+
+.green {
+    background-color: var(--row-green);
+    color: #FFFFFF;
+}
+/* //====COLOR==== */
+
+/* =====STAR===== */
+.white-star>div {
+    background-color: var(--white);
+    height: 2px;
+}
+
+.white-star>.fa-star {
+    color: var(--white);
+}
+
+.black-star> div {
+    background-color: var(--black);
+    height: 2px;
+}
+/* //=====STAR===== */
+
+/* ====ROW 3 ABOUT==== */
+.centred{
+    margin: 0 auto;
+} 
+/* //====ROW 3 ABOUT==== */
+
+/* ====FOOTER==== */
+.top-footer {
+    background-color: var(--light-gray);
+}
+
+.social{
+    font-size: 20px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+} 
+/* ====FOOTER==== */
+
+/* =====MEDIA FOR FIX FONT SIZE==== */
+
+@media screen and (min-width:200px) and (max-width:576px) {
+    main>.green ul{
+        font-size: 0.55rem;
+    }
+} 
+
+@media screen and (max-width:768px) {
+    * {
+        font-size: 101%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    nav>div>div>ul>li>a {
+        font-size: 60%;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    * {
+        font-size: 106%;
+    }
+
+    nav>div>div>ul>li>a {
+        font-size: 60%;
+    }
+
+}
+
+/*//=====MEDIA FOR FIX FONT SIZE==== */
